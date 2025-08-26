@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Flashcards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Flashcards</h1>
+  <p>Score: <span id="score">0</span></p>
+  <h3>Add a new flashcard</h3>
+    <form id="add-form">
+      <input type="text" id="ru-input" placeholder="Russian word" required>
+      <input type="text" id="en-input" placeholder="English word" required>
+      <button type="submit">Add Flashcard</button>
+    </form>
+
+  <div id="card">Loading...</div>
+  <button id="prev-btn">⬅️ Previous</button>
+  <button id="flip-btn">🔁 Flip</button>
+  <button id="next-btn">➡️ Next</button>
+  <button id="delete-btn">🗑️ Delete</button>
+
+  <br><br>
+  <button id="correct-btn">✅ I got it right</button>
+  <button id="reset-btn">🔄 Reset Score</button>
+  <br><br>
+  <a href="index.html">🏠 Back to Home</a>
+
+  <script src="shared.js"></script>
+  <script src="flashcards.js"></script>
+</body>
+</html>

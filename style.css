@@ -1,0 +1,106 @@
+/* Reset some basic styles */
+body, h1, h2, p, ul, li, button, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* General page layout */
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Score display */
+#score {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Flashcard styling */
+#card {
+  background-color: white;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 1.5em;
+ text-align: center;
+  margin: 20px 0;
+  min-height: 80px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Links */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* List of exercises on homepage */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  #card {
+    font-size: 1.2em;
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px 20px;
+    font-size: 1.1em;
+  }
+}
