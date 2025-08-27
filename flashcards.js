@@ -48,11 +48,25 @@ addForm.addEventListener("submit", (e) => {
   }
 });
 
-function showCard() {
+/*function showCard() {
   if (words.length === 0) return;
   const word = showingFront ? words[current].en : words[current].ru;
   card.textContent = word;
+}*/
+
+function showCard() {
+  if (words.length === 0) return;
+
+  const front = document.getElementById("card-front");
+  const back = document.getElementById("card-back");
+
+  front.textContent = words[current].en;
+  back.textContent = words[current].ru;
+
+  // Always reset to front when changing cards
+  card.classList.remove("flipped");
 }
+
 
 nextBtn.addEventListener("click", () => {
   current = (current + 1) % words.length;
@@ -66,10 +80,10 @@ prevBtn.addEventListener("click", () => {
   showCard();
 });
 
-flipBtn.addEventListener("click", () => {
-  showingFront = !showingFront;
-  showCard();
+card.addEventListener("click", () => {
+  card.classList.toggle("flipped");
 });
+
 
 correctBtn.addEventListener("click", () => {
   increaseScore();
