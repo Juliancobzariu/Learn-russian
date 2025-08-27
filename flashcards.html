@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,9 +16,14 @@
       <button type="submit">Add Flashcard</button>
     </form>
 
-  <div id="card">Loading...</div>
+  <div id="card" class="card">
+    <div class="card-inner">
+      <div class="card-front" id="card-front"></div>
+      <div class="card-back" id="card-back"></div>
+    </div>
+  </div>
+
   <button id="prev-btn">⬅️ Previous</button>
-  <button id="flip-btn">🔁 Flip</button>
   <button id="next-btn">➡️ Next</button>
   <button id="delete-btn">🗑️ Delete</button>
 
